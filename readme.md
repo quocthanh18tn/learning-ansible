@@ -22,3 +22,25 @@ handlers:
 
 ansible-playbook -i hosts web-app.yml -vvvv
 ansible-playbook -i hosts nginx.yml -vv
+
+=================================================
+=================================================
+shutdown --help
+shutdown [OPTIONS...] [TIME] [WALL...]
+
+Shut down the system.
+
+     --help      Show this help
+  -H --halt      Halt the machine
+  -P --poweroff  Power-off the machine
+  -r --reboot    Reboot the machine
+  -h             Equivalent to --poweroff, overridden by --halt
+  -k             Don't halt/power-off/reboot, just send warnings
+     --no-wall   Don't send wall message before halt/power-off/reboot
+  -c             Cancel a pending shutdown
+
+unit: min
+example:
+shutdown -h 30    ( tat sau 30 phut )
+shutdown -r now  ( restart ngay lap tuc )
+shutdown -c         ( cancel shutdown )
