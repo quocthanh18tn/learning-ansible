@@ -23,6 +23,8 @@ handlers:
 ansible-playbook -i hosts web-app.yml -vvvv
 ansible-playbook -i hosts nginx.yml -vv
 
+ansible localhost -m command -a  "uname -r"
+
 =================================================
 =================================================
 shutdown --help
@@ -44,3 +46,4 @@ example:
 shutdown -h 30    ( tat sau 30 phut )
 shutdown -r now  ( restart ngay lap tuc )
 shutdown -c         ( cancel shutdown )
+
