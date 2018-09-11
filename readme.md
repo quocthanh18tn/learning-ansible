@@ -12,3 +12,8 @@ serial: 1
 delegate_to:  {{ group['lb'][0] }}
   - Chỉ thực thi trên group lb ở index 0.
 
+handlers:
+  - Thuc thi callback khi changed = true
+
+ansible-playbook -i hosts web-app.yml -vvvv
+ansible-playbook -i hosts nginx.yml -vv
