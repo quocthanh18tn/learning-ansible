@@ -1,3 +1,8 @@
+TODO:
+  inventory_hostname: ten host dang thuc thi.
+  - Day la bien ansible support san
+  - Can phai tim hieu cac bien default ansible variables
+
 - name: demo
   fail:
     msg: "run on {{ inventory_hostname }}"
